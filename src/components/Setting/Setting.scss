@@ -1,0 +1,161 @@
+.setting-container {
+    padding: 50px 20px 20px 150px;
+    width: 800px;
+
+    .dang-xuat {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        background-color: #DAE6F7;
+        padding: 20px;
+        border-radius: 10px;
+
+        .profile {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+        
+            .avatar {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: #89ACD6;
+                margin-right: 20px;
+                overflow: hidden; /* Đảm bảo ảnh không tràn ra ngoài khung hình tròn */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            
+                img {
+                    width: 100%; /* Đảm bảo ảnh căn giữa và điền vào khung hình tròn */
+                    height: 100%;
+                    object-fit: cover; /* Căn giữa và điều chỉnh kích thước của ảnh để nó lấp đầy khung hình tròn */
+                }
+            }
+        
+            .hoten {
+                font-weight: bold;
+                white-space: nowrap; /* Ngăn chữ "Quyền Chí Long" xuống dòng mới */
+                overflow: hidden; /* Ngăn chữ vượt quá kích thước khung */
+                text-overflow: ellipsis; /* Hiển thị dấu elipsis (...) khi chữ vượt quá kích thước khung */
+            }
+        }
+
+        .button-dang-xuat-1 {
+            margin-left: auto;
+            border-radius: 5px;
+            background-color: #DAE6F7;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            color: #333;
+
+            &:hover {
+                background-color: #B0C4DE;
+            }
+        }
+    }
+
+    .bao-mat {
+        background-color: #DAE6F7;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+
+        .box-bao-mat {
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .box-doi-pass, .box-ho-so {
+            margin-bottom: 20px;
+
+            .box-doi-pass-1, .box-ho-so-1 {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 10px;
+                }
+
+                span {
+                    font-weight: bold;
+                }
+
+                .chinh-sua, .doi-mat-khau {
+                    margin-left: auto;
+                    border-radius: 5px;
+                    background-color: #DAE6F7;
+                    padding: 8px 16px;
+                    border: none;
+                    cursor: pointer;
+                    font-weight: bold;
+                    color: #333;
+
+                    &:hover {
+                        background-color: #B0C4DE;
+                    }
+                }
+            }
+        }
+
+        .luu-ttdn {
+            .luu-ttdn-main {
+                display: flex;
+                align-items: center;
+                margin-top: 15px;
+                margin-bottom: 20px;
+        
+                span {
+                    font-weight: bold;
+                    white-space: nowrap; 
+                }
+        
+                .react-toggle-track-x {
+                    width: 40px; 
+                }
+            }
+        }
+        
+    }
+
+    .thong-bao {
+        white-space: nowrap; 
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        background-color: #DAE6F7;
+        padding: 20px;
+        border-radius: 10px;
+    
+        img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+    
+        span {
+            font-weight: bold;
+            white-space: nowrap; 
+        }
+    
+        .cai-dat {
+            margin-left: auto;
+            border-radius: 5px;
+            background-color: #DAE6F7;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            color: #333;
+    
+            &:hover {
+                background-color: #B0C4DE;
+            }
+        }
+    }    
+}

@@ -1,0 +1,55 @@
+$mobile-width: 480;
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+
+.note-container {
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+        padding: 31px;
+        padding-left: 50px;
+        // margin-bottom: 50px;
+    }
+
+    .add-note {
+        display: flex;
+        justify-content: center;
+
+        @include mobile {
+            margin-top: 20px;
+        }
+
+        svg {
+            margin-top: 4px;
+        }
+
+        span {
+            margin-left: 10px;
+        }
+    }
+
+    .ant-checkbox-group {
+        column-gap: 80px
+    }
+
+    // .note-row {
+    //     @include mobile {
+    //         width: 250px;
+    //     }
+
+    //     .ant-checkbox {}
+
+    //     span {
+    //         @include mobile {
+    //             width: 100px;
+    //         }
+    //     }
+
+    // }
+}
